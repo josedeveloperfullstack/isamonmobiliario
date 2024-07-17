@@ -68,7 +68,7 @@ const Hero = () => {
                 alt=""  
                 className='w-[400px] h-[400px] sm:h-
                 [450px] sm:w-[450px]  sm:scale-125 
-                object-contain mx-auto p-4'/>
+                object-contain mx-auto p-4 rounded-full'/>
               </div>
             </div>
           </div>
