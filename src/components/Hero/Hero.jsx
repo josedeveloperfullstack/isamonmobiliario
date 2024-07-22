@@ -1,29 +1,29 @@
 import React from 'react'
-import Imagen1 from "../../assets/hero/imagen1.png";
-import Imagen2 from "../../assets/hero/imagen2.png";
-import Imagen3 from "../../assets/hero/imagen3.png"
+import Imagen1 from "../../assets/hero/Imagen1.png";
+import Imagen2 from "../../assets/hero/Imagen2.png";
+import Imagen3 from "../../assets/hero/Imagen3.png";
 import Slider from 'react-slick';
 
-import { MdDescription } from 'react-icons/md';
+
 
 const ImageList  = [
   {
     id: 1,
-    img: imagen1,
-    title: "u",
-    description: "l",
+    img: Imagen1,
+    title: "Encuentra aquí el mobiliario perfecto para tus hijos",
+    description: "Funcional y a tu gusto",
   },
   {
     id: 2,
-    img: imagen2,
-    title: "u",
-    description: "u",
+    img: Imagen2,
+    title: "Cama Juegos",
+    description: "Especiales para tus hijos",
   },
   {
     id: 3,
-    img: imagen3,
-    title: "u",
-    description: "u",
+    img: Imagen3,
+    title: "Cama Carro",
+    description: "Especiales para tus hijos",
   },
 
 ]
@@ -90,8 +90,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-          ))}</Slider>
-          
+          ))}
+      </Slider>
     </div>
   </div>
 
