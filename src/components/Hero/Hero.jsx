@@ -1,26 +1,27 @@
 import React from 'react'
-import Imagen1 from "../../assets/hero/Imagen1.png";
-import Imagen2 from "../../assets/hero/Imagen2.png";
-import Imagen3 from "../../assets/hero/Imagen3.png"
+import Imagen1 from "../../assets/hero/imagen1.png";
+import Imagen2 from "../../assets/hero/imagen2.png";
+import Imagen3 from "../../assets/hero/imagen3.png"
+import Slider from 'react-slick';
 
 import { MdDescription } from 'react-icons/md';
 
 const ImageList  = [
   {
     id: 1,
-    img: Imagen1,
+    img: imagen1,
     title: "u",
     description: "l",
   },
   {
     id: 2,
-    img: Imagen2,
+    img: imagen2,
     title: "u",
     description: "u",
   },
   {
     id: 3,
-    img: Imagen3,
+    img: imagen3,
     title: "u",
     description: "u",
   },
@@ -28,6 +29,18 @@ const ImageList  = [
 ]
 
 const Hero = () => {
+  var settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 800,
+    slideToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    CSSeASE: 'ease-in-out',
+    pauseOnHover: false,
+    pauseOnFocus: true,
+  };
   return (
     <div className='relative overflow-hidden min-h-[550px]
     sm:min-h-[650px] bg-azulisamon/10 flex justify-center 
@@ -40,6 +53,10 @@ const Hero = () => {
       </div>
       { /* hero section*/}
         <div className='container pb-8 sm:pb-0'>
+          <Slider {...settings}>
+            {ImageList.map((data) => (
+
+            
           <div>
             <div className='grid grid-cols-1 sm:grid-cols-2 '>
               {/*text content sec
@@ -47,9 +64,9 @@ const Hero = () => {
               <div className='flex flex-col justify-center 
               gap-4 pt-12 sm:pt-0 text-center sm:text-left
               order-2 sm:order-1 relative z-10'>
-                <h1 className='text-5xl sm:text-5xl lg:text-5xl font-bold text-cafeisamonborder' >
-                    Encuentra aquí el mobiliario perfecto para tus niños.</h1>
-                  <p className='text-sm'> ¡Funcional y a tu gusto.</p> 
+                <h1 className='text-5xl sm:text-5xl lg:text-5xl font-bold text-cafeisamonborder'>
+                    {data.title}</h1>
+                  <p className='text-sm'>{data.description}</p> 
               
             
               <div>
@@ -64,7 +81,7 @@ const Hero = () => {
           >
               <div className='relative z-10' >
                 <img 
-                src={Imagen1} 
+                src={data.img} 
                 alt=""  
                 className='w-[400px] h-[400px] sm:h-
                 [450px] sm:w-[450px]  sm:scale-125 
@@ -73,6 +90,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
+          ))}</Slider>
+          
     </div>
   </div>
 
