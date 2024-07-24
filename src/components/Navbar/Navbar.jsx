@@ -95,7 +95,7 @@ const Navbar = () => {
       <div className='bg-white/40 py-2'>
         <div className='container flex justify-between items-center'>
           <div>
-            <a href="#" className = "font-bold text-2x1 sm:3x1 flex gap-2 ">
+            <a href="#" className = "font-serif text-2x1 sm:3x1 flex gap-2 ">
               <img src={Logo}  alt ="logo"
               className='w-36'/>
               {/*Isamon*/}

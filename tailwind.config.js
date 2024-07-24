@@ -8,10 +8,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        azulisamon : "#64b9ae",
-        rosadoisamon : "#f08174",
-        amarilloisamon : "#fcd656", 
-        cafeisamonborder : "#725a2e"
+        azulisamon :" rgb(157, 187, 175);",
+        rosadoisamon : "rgb(57,64,50)",
+        amarilloisamon : "rgb(157, 187, 175)", 
+        cafeisamonborder : "rgb(57,64,50)"
       },
       container: {
         center: true, 

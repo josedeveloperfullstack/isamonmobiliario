@@ -5,11 +5,14 @@ import Navbar from './components/Navbar/Navbar';
 import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'*/ 
 import Hero from './components/Hero/Hero';
+import Products from './components/Products/Products';
+
 
 const App = () => {
   return <div> 
     <Navbar/>
     <Hero/>
+    <Products />
     
     
   </div>;

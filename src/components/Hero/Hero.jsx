@@ -48,7 +48,7 @@ const Hero = () => {
     duration-200 '>
       {/*backgroud pattern */}
       
-      <div className='h-[700px] w-[700px] bg-rosadoisamon/50
+      <div className='h-[700px] w-[700px] bg-azulisamon
       absolute -top-1/2 right-auto rounded-3xl rotate-45 -z-9'>
       </div>
       { /* hero section*/}
@@ -64,7 +64,7 @@ const Hero = () => {
               <div className='flex flex-col justify-center 
               gap-4 pt-12 sm:pt-0 text-center sm:text-left
               order-2 sm:order-1 relative z-10'>
-                <h1 className='text-5xl sm:text-5xl lg:text-5xl font-bold text-cafeisamonborder'>
+                <h1 className='text-5xl sm:text-5xl lg:text-5xl font-serif text-cafeisamonborder'>
                     {data.title}</h1>
                   <p className='text-sm'>{data.description}</p> 
               
@@ -72,7 +72,7 @@ const Hero = () => {
               <div>
                 <button className='bg-amarilloisamon text-black   hover:scale-105 
                 duration-200 py-2 px-4 rounded-full'>
-                    Tienda 
+                  Comprar
                 </button>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Hero = () => {
                 alt=""  
                 className='w-[400px] h-[400px] sm:h-
                 [450px] sm:w-[450px]  sm:scale-125 
-                object-contain mx-auto p-4 rounded-full'/>
+                lg:scale-120 object-contain mx-auto p-4 rounded-full'/>
               </div>
             </div>
           </div>
