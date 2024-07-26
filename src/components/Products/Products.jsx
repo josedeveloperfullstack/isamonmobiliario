@@ -3,6 +3,7 @@ import Img1 from '../../assets/products/imagen1.JPG'
 import Img2 from '../../assets/products/imagen2.JPG'
 import Img3 from '../../assets/products/imagen3.JPG'
 import Img4 from '../../assets/products/imagen4.JPG'
+import { FaStar } from 'react-icons/fa'
 
 const ProductsData = [
     {
@@ -62,8 +63,17 @@ const Products = () => {
                         <div>
                             <img src={data.img} alt='' 
                             className='h-[220px] w-[150px] object-cover rounded-md'
-                            
-                            />
+                             />
+                             <div>
+                                <h3 className='font-serif'>{data.title}</h3>
+                                <p className='text-sm text-rosadoisamon'>
+                                    {data.color}
+                                </p>
+                                <div className='text-amarilloisamon'>
+                                    <FaStar className='text-rose-500'/>
+                                    <span>{data.rating}</span>
+                                </div>    
+                             </div>   
                         </div>    
 
                      ))}
