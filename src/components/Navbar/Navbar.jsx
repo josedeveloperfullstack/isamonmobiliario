@@ -33,54 +33,42 @@ const menu = [
     name: "Tipo de Producto",
     link: "/#",
   },*/
-  {
-    id: 2, 
-    name: "Actividad",
-    link: "/#services",
-  },
-  {
-    id: 3,
-    name: "Hábito",
-    link: "/#",
-  },
+  
+
   {
     id: 4,
-    name: "Etapa",
+    name: "Nuevos productos",
     Link: "/#",
 
   }, 
   {
     id: 5,
-    name: "Nuevos",
+    name: "Ofertas",
     Link: "/#",
   },
   {
     id: 6,
-    name: "Ofertas",
+    name: "Idéa tu proyecto",
     link: "/#",
   },
 ];
 const Dropdownliink = [
   {
     id: 1,
-    name: "Accesorios",
+    name: "Niños y bebés",
     link: "#",
   },
   {
     id: 2,
-    name: "Camas",
+    name: "Muebles",
     link: "/#",
   },
   {
     id: 3,
-    name: "Cocinas",
+    name: "Almacenamiento y organización",
     link: "/#",
   },
-  {
-    id: 4,
-    name: "Cunas",
-    link: "/#",
-  },
+  
 
   
   
@@ -147,7 +135,7 @@ const Navbar = () => {
           <a href="#" className='flex items-center 
             gap-[2px] py-2 
               hover:text-amarilloisamon duration-200'>
-            Tipo de Producto
+            Productos
             <span>
               <FaCaretDown 
               className='transition-all

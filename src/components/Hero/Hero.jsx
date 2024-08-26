@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 
 
 
+
 const ImageList  = [
   {
     id: 1,
@@ -30,16 +31,13 @@ const ImageList  = [
 
 const Hero = () => {
   var settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    speed: 800,
-    slideToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    CSSeASE: 'ease-in-out',
-    pauseOnHover: false,
-    pauseOnFocus: true,
+    dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 6000,
   };
   return (
     <div className='relative overflow-hidden min-h-[550px]

@@ -1,10 +1,10 @@
-import React from 'react'
-import Img1 from '../../assets/products/imagen1.JPG'
-import Img2 from '../../assets/products/imagen2.JPG'
-import Img3 from '../../assets/products/imagen3.JPG'
-import Img4 from '../../assets/products/imagen4.JPG'
-import { FaStar } from 'react-icons/fa'
-import { IoPricetagsOutline } from 'react-icons/io5'
+import React from 'react';
+import Img1 from '../../assets/products/imagen1.JPG';
+import Img2 from '../../assets/products/imagen2.JPG';
+import Img3 from '../../assets/products/imagen3.JPG';
+import Img4 from '../../assets/products/imagen4.JPG';
+import Slider from 'react-slick';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const ProductsData = [
     {
@@ -39,59 +39,115 @@ const ProductsData = [
         price: "$4444",
         aosDelay: "0",
     },
-]
+];
+
+// Componentes personalizados para las flechas
+const NextArrow = ({ onClick }) => (
+    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-azulisamon">
+        <FaChevronRight onClick={onClick} size={30} />
+    </div>
+);
+
+const PrevArrow = ({ onClick }) => (
+    <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-azulisamon">
+        <FaChevronLeft onClick={onClick} size={30} />
+    </div>
+);
+
 const Products = () => {
+    const settings = {
+        dots: false,  // Desactiva los puntos
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,  // Mostrar 4 productos por defecto
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        nextArrow: <NextArrow />,  // Flecha personalizada para siguiente
+        prevArrow: <PrevArrow />,  // Flecha personalizada para anterior
+        responsive: [
+          {
+            breakpoint: 1600,  // Pantallas muy grandes (4K o ultra-wide)
+            settings: {
+              slidesToShow: 4,  // Mostrar 5 productos
+            }
+          },
+          {
+            breakpoint: 1440,  // Pantallas grandes
+            settings: {
+              slidesToShow: 4,  // Mostrar 4 productos
+            }
+          },
+          {
+            breakpoint: 1200,  // Pantallas medianas (laptops más grandes)
+            settings: {
+              slidesToShow: 3,  // Mostrar 3 productos
+            }
+          },
+          {
+            breakpoint: 1024,  // Pantallas medianas (laptops estándar)
+            settings: {
+              slidesToShow: 2,  // Mostrar 2 productos
+            }
+          },
+          {
+            breakpoint: 768,  // Tablets
+            settings: {
+              slidesToShow: 2,  // Mostrar 2 productos
+            }
+          },
+          {
+            breakpoint: 600,  // Teléfonos grandes
+            settings: {
+              slidesToShow: 1,  // Mostrar 1 producto
+            }
+          },
+          {
+            breakpoint: 480,  // Teléfonos móviles pequeños
+            settings: {
+              slidesToShow: 1,  // Mostrar 1 producto
+            }
+          }
+        ]
+    };
+
     return (
-        <div className='mt-14 mb-12'>
+        <div className='mt-14 mb-12 relative'>
             <div className='container'>
-                {/*Header section */}
-                <div className='text-center mb-10 max-w-[600px] mx-auto' >
+                {/* Header section */}
+                <div className='text-center mb-10 max-w-[600px] mx-auto'>
                     <p data-aos='fade-up' className='text-xl text-rosadoisamon'>Nuevos</p>
-                    <h1 data-aos='fade-up'className='text-3xl font-serif'>Productos</h1>
-                    <p data-aos='fade-up'className='text-xl text-rosadoisamon'>
+                    <h1 data-aos='fade-up' className='text-3xl font-serif'>Productos</h1>
+                    <p data-aos='fade-up' className='text-xl text-rosadoisamon'>
                     Envío posterior a fabricación entre 25 y 30 días hábiles 
                     </p>
                 </div>
-                {/*Body section */}
-                <div>
-                    <div 
-                    className='grid grid-cols-1 sm:grid-cols-2
-                    md:grid-cols-3 lg:grid-cols-4 place-items-center
-                    gap-5'>
-    
-                    {/*card section*/}
-                    {ProductsData.map((data) => (
-                        <div
-                        data-aos='fade-up'
-                        data-aos-delay={data.aosDelay}
-                        key={data.id}
-                        className='space-y-3'>
-                        
-                            <img src={data.img} alt='' 
-                            className='h-[220px] w-[220px] object-cover rounded-md'
-                             />
-                             <div>
-                                <h3 className='font-serif'>{data.title}</h3>
-                                <p className='text-sm text-rosadoisamon'>
-                                    {data.price}
-                                </p>
-                                <div className='flex items-center gap-1'>
-                                    <FaStar className='text-rose-500'/>
-                                    <span>{data.rating}</span>
-                                </div>    
-                             </div>   
-                        </div>    
-
-                     ))}
-                    
-    
-                    
-    
-                    
-                </div>
+                {/* Slider section */}
+                <Slider {...settings}>
+                    {
+                        ProductsData.map((data) => (
+                            <div key={data.id} className='p-2'>
+                                <div className='rounded-2xl bg-white dark:bg-rosadoisamon hover:bg-azulisamon dark:hover:bg-azulisamon hover:text-white relative shadow-xl duration-300 group max-w-[300px] mx-auto'>
+                                    {/* image section */}
+                                    <div className='h-[350px]'>
+                                        <img src={data.img} alt={data.title} className='max-w-[260px] block mx-auto transform group-hover:scale-95 rounded-2xl duration-300 drop-shadow-md' />
+                                    </div>
+                                    {/* details section */}
+                                    <div className='p-4 text-left'>
+                                        <h1 className='text-xl font-bold'>{data.title}</h1>
+                                        <p className='text-rosadoisamon group-hover:text-rosadoisamon duration-300 line-clamp-2'>{data.price}</p>
+                                        <button className='bg-azulisamon hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-cafeisamonborder'>
+                                            Añadir al Carrito
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </Slider>
             </div>
         </div>
-        </div>
-                )}
-    
-    export default Products;
+    );
+};
+
+export default Products;

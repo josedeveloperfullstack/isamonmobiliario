@@ -28,6 +28,9 @@ export default {
             '0 45px 65px rgba(0, 0, 0, 0.15)',
         ],
       },
+      backgroundImage: {
+        'pine-texture': "url('/assets/hero/texturamadera.JPG')",
+      },
     },
   },
   plugins: [],

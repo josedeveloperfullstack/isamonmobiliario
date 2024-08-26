@@ -1788,9 +1788,9 @@
   "version" "1.4.1"
 
 "micromatch@^4.0.4", "micromatch@^4.0.5":
-  "integrity" "sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q=="
-  "resolved" "https://registry.npmjs.org/micromatch/-/micromatch-4.0.7.tgz"
-  "version" "4.0.7"
+  "integrity" "sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA=="
+  "resolved" "https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz"
+  "version" "4.0.8"
   dependencies:
     "braces" "^3.0.3"
     "picomatch" "^2.3.1"
@@ -2478,6 +2478,11 @@
   "integrity" "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
+
+"swiper@^11.1.10":
+  "integrity" "sha512-pAVM6vCb6bumj2B9aSh67l3wP1j5YR8dPQM1YhQKMpnBc33vs+RpyVz6NZYZl/ZopCBSYbbWK5nvESwbmU0QXQ=="
+  "resolved" "https://registry.npmjs.org/swiper/-/swiper-11.1.10.tgz"
+  "version" "11.1.10"
 
 "tailwindcss@^3.4.4":
   "integrity" "sha512-rxWZbe87YJb4OcSopb7up2Ba4U82BoiSGUdoDr3Ydrg9ckxFS/YWsvhN323GMcddgU65QRy7JndC7ahhInhvlQ=="
