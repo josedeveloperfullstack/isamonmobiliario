@@ -1,8 +1,8 @@
 import React from 'react';
-import Img1 from '../../assets/products/imagen1.JPG';
-import Img2 from '../../assets/products/imagen2.JPG';
-import Img3 from '../../assets/products/imagen3.JPG';
-import Img4 from '../../assets/products/imagen4.JPG';
+import Img1 from '../../assets/products/imagen1.jpg';
+import Img2 from '../../assets/products/imagen2.jpg';
+import Img3 from '../../assets/products/imagen3.jpg';
+import Img4 from '../../assets/products/imagen4.jpg';
 import Slider from 'react-slick';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
@@ -69,7 +69,7 @@ const Products = () => {
           {
             breakpoint: 1600,  // Pantallas muy grandes (4K o ultra-wide)
             settings: {
-              slidesToShow: 4,  // Mostrar 5 productos
+              slidesToShow: 4,  // Mostrar 4 productos
             }
           },
           {

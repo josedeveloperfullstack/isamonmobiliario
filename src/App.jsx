@@ -10,8 +10,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TopProducts from './components/TopProducts/TopProducts';
 import Testimonios from './components/Testimonios/Testimonios';
-
-
+import Agendamiento from './components/Agendamiento/Agendamiento';
+import Quienessomos from './components/Quienessomos/Quienessomos';
+import Footer from './components/Footer/Footer';
+import Categorias from './components/Categorias/Categorias';
 const App = () => {
 
   React.useEffect(() => {
@@ -25,10 +27,17 @@ const App = () => {
   }, []);
   return <div> 
     <Navbar/>
+    
     <Hero/>
     <Products />
+    <Categorias />
     <TopProducts />
     <Testimonios />
+    <Agendamiento />
+    <Quienessomos />
+    <Footer />
+    
+
     
     
     
