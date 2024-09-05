@@ -5,7 +5,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 const ProductsData = [
     {
         id: 1,
-        img: "../../assets/products/imagen1.JPG",
+        img: "images/products/imagen1.JPG",
         title: "Aros de Gimnasia",
         rating: 5.0,
         price: "$4444",
@@ -13,7 +13,7 @@ const ProductsData = [
     },
     {
         id: 2,
-        img: "../../assets/products/imagen2.JPG",
+        img: "images/products/imagen2.JPG",
         title: "Barra de Juego Vertical",
         rating: 5.0,
         price: "$4444",
@@ -21,7 +21,7 @@ const ProductsData = [
     },
     {
         id: 3,
-        img: "../../assets/products/imagen3.JPG",
+        img: "images/products/imagen3.JPG",
         title: "Estación de Arte",
         rating: 5.0,
         price: "$4444",
@@ -29,7 +29,7 @@ const ProductsData = [
     },
     {
         id: 4,
-        img: "../../assets/products/imagen4.JPG",
+        img: "images/products/imagen4.JPG",
         title: "Silla Violetta",
         rating: 5.0,
         price: "$4444",
