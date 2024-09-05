@@ -2,7 +2,6 @@ import React from 'react';
 import Imagentop1 from '../../assets/topproducts/imagentop1.JPG';
 import Imagentop2 from '../../assets/topproducts/imagentop2.JPG';
 import Imagentop3 from '../../assets/topproducts/imagentop3.JPG';
-import Imagentop4 from '../../assets/topproducts/imagentop4.png';
 import Slider from 'react-slick';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
@@ -27,7 +26,7 @@ const ProductsData = [
     },
     {
         id: 3,
-        img: Imagentop4,
+        img: "../../assets/topproducts/imagentop4.png",
         title: "Estación de Arte",
         rating: 5.0,
         price: "$250.000",
