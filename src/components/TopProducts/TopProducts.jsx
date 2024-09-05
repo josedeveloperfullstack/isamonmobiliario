@@ -26,7 +26,7 @@ const ProductsData = [
     },
     {
         id: 3,
-        img: "../../assets/topproducts/imagentop4.png",
+        img: "../../assets/topproducts/Imagentop4.png",
         title: "Estación de Arte",
         rating: 5.0,
         price: "$250.000",
