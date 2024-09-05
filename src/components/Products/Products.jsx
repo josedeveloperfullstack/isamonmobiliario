@@ -1,5 +1,4 @@
 import React from 'react';
-import Img1 from '../../assets/products/imagen1.jpg';
 import Img2 from '../../assets/products/imagen2.jpg';
 import Img3 from '../../assets/products/imagen3.jpg';
 import Img4 from '../../assets/products/imagen4.jpg';
@@ -9,7 +8,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 const ProductsData = [
     {
         id: 1,
-        img: Img1,
+        img: "../../assets/products/imagen1.jpg",
         title: "Aros de Gimnasia",
         rating: 5.0,
         price: "$4444",
@@ -17,7 +16,7 @@ const ProductsData = [
     },
     {
         id: 2,
-        img: Img2,
+        img: "../../assets/products/imagen2.jpg",
         title: "Barra de Juego Vertical",
         rating: 5.0,
         price: "$4444",
@@ -25,7 +24,7 @@ const ProductsData = [
     },
     {
         id: 3,
-        img: Img3,
+        img: "../../assets/products/imagen3.jpg",
         title: "Estación de Arte",
         rating: 5.0,
         price: "$4444",
@@ -33,7 +32,7 @@ const ProductsData = [
     },
     {
         id: 4,
-        img: Img4,
+        img: "../../assets/products/imagen4.jpg",
         title: "Silla Violetta",
         rating: 5.0,
         price: "$4444",
